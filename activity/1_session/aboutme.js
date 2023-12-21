@@ -9,3 +9,19 @@ const personalDescription = `Hola, me llamo ${fullname} y me dedico a ${proffesi
 console.log(personalDescription);
 
 console.log("later");
+
+
+
+const formatter = {
+  prefix: "Hello ",
+
+  append(cadena) {
+    console.log(this.prefix + cadena);
+  },
+};
+
+formatter.append("World")
+
+formatter.prototype.toLowerString = function(cadena) {
+  console.log(cadena.toLowerCase());
+};
