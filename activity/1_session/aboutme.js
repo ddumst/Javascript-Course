@@ -22,7 +22,7 @@ const formatter = {
 
 formatter.append("World")
 
-formatter.prototype.toLowerString = function(cadena) {
+formatter.__proto__.toLowerString = function(cadena) {
   console.log(cadena.toLowerCase());
 };
 
