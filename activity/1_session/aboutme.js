@@ -25,3 +25,5 @@ formatter.append("World")
 formatter.prototype.toLowerString = function(cadena) {
   console.log(cadena.toLowerCase());
 };
+
+formatter.toLowerString("I’m Lucas")
