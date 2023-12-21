@@ -148,6 +148,17 @@ let loginWitUsername = (username, password) => {
     </div>
     <script src="../../prism.js"></script>
     <script src="index.js">
+        let loginWitUsername = (username, password) => {
+            return new Promise(function (resolve, rejected) {
+                setTimeout(() => {
+                if (username === "admin" && password === "passwd") {
+                    resolve("User logged in");
+                } else {
+                    rejected("Error: invalid username or password");
+                }
+                }, 200);
+            });
+        }
         // Ejercicio 5
 
         // Botón loginSuccess
